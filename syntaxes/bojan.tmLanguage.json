@@ -1,0 +1,177 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Bojan",
+  "patterns": [
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#paths"
+    },
+    {
+      "include": "#blockComments"
+    },
+    {
+      "include": "#warning"
+    },
+    {
+      "include": "#error"
+    },
+    {
+      "include": "#info"
+    },
+    {
+      "include": "#debug"
+    },
+    {
+      "include": "#parameters"
+    },
+    {
+      "include": "#date"
+    },
+    {
+      "include": "#isodates"
+    },
+    {
+      "include": "#reginonaldates"
+    },
+    {
+      "include": "#times"
+    },
+    {
+      "include": "#bojan"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#blockComments2"
+    },
+    {
+      "include": "#emojis"
+    }
+  ],
+  "repository": {
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.regexp.bojan",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": []
+        },
+        {
+          "name": "string.regexp.bojan",
+          "begin": "'",
+          "end": "'",
+          "patterns": []
+        },
+        {
+          "name": "string.regexp.bojan",
+          "begin": "`",
+          "end": "`",
+          "patterns": []
+        }
+      ]
+    },
+    "emojis": {
+      "patterns": [
+        {
+          "name": "constant.language.python.bojan",
+          "match": ".*❌.*"
+        },
+        {
+          "name": "string.quoted.bojan",
+          "match": ".*✅.*"
+        },
+        {
+          "name": "variable.bojan",
+          "match": ".*⚠️.*"
+        },
+        {
+          "name": "comment.line.bojan",
+          "match": ".*💬.*"
+        }
+      ]
+    },
+    "comments": {
+      "name": "comment.line.bojan",
+      "match": "#.*"
+    },
+    "blockComments": {
+      "name": "comment.block.bojan",
+      "begin": "\\[",
+      "end": "\\]",
+      "patterns": []
+    },
+    "blockComments2": {
+      "name": "comment.block.bojan",
+      "begin": "\\(",
+      "end": "\\)",
+      "patterns": []
+    },
+    "warning": {
+      "name": "variable.bojan",
+      "match": "(?i)\\b(warning|warn)\\b"
+    },
+    "error": {
+      "name": "constant.language.python",
+      "match": "(?i)\\b(error|err|eror)\\b"
+    },
+    "info": {
+      "name": "comment.line.bojan",
+      "match": "(?i)\\b(info|inf)\\b"
+    },
+    "debug": {
+      "name": "comment.line.bojan",
+      "match": "(?i)\\b(debug|dbg|dbug)\\b"
+    },
+    "parameters": {
+      "name": "variable.parameter.bojan",
+      "match": "\\b\\@[\\w]+\\b"
+    },
+    "numbers": {
+      "name": "constant.numeric.bojan",
+      "match": "\\b(\\d+(\\.\\d+)?)\\b"
+    },
+    "date": {
+      "name": "constant.numeric.bojan",
+      "match": "\\b\\d{4}-\\d{2}-\\d{2}\\b"
+    },
+    "isodates": {
+      "name": "constant.numeric.bojan",
+      "match": "\\b\\d{4}-\\d{2}-\\d{2}(T|\\b)"
+    },
+    "reginonaldates": {
+      "name": "constant.numeric.bojan",
+      "match": "(?<=(^|\\s))\\d{2}[^\\w\\s]\\d{2}[^\\w\\s]\\d{4}\\b"
+    },
+    "times": {
+      "name": "constant.numeric.bojan",
+      "match": "\\d{1,2}:\\d{2}(:\\d{2}([.,]\\d{1,})?)?(Z| ?[+-]\\d{1,2}:\\d{2})?\\b"
+    },
+    "bojan": {
+      "name": "entity.name.tag.bojan",
+      "match": "(?i)\\bbojan\\b"
+    },
+    "text": {
+      "name": "meta.function-call.generic.python",
+      "match": ".+"
+    },
+    "paths": {
+      "name": "entity.name.function.bojan",
+      "match": "(https?:\\/\\/|www\\.|[a-zA-Z]:\\/\\/|localhost:\\d+\\/|[a-zA-Z0-9\\-]+\\.[a-zA-Z]{2,}|(?:\\.?\\/)?(?:[\\w\\-\\.]+\\/)*[\\w\\-\\.]+\\.[a-zA-Z]{2,})"
+    },
+    "keywords": {
+      "name": "keyword.bojan",
+      "match": "\\b(true|false|null|undefined|nan)\\b"
+    }
+  },
+  "scopeName": "source.bojan"
+}
