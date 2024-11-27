@@ -12,9 +12,6 @@
       "include": "#paths"
     },
     {
-      "include": "#paths_linux"
-    },
-    {
       "include": "#links"
     },
     {
