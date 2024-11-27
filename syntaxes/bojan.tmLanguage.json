@@ -55,9 +55,6 @@
     },
     {
       "include": "#emojis"
-    },
-    {
-      "include": "#blockComments2"
     }
   ],
   "repository": {
@@ -87,15 +84,15 @@
       "patterns": [
         {
           "name": "constant.language.python.bojan",
-          "match": "(?<=❌)[^\\(\\)\\[\\]]+"
+          "match": "(?<=❌)[^\\[\\]]+"
         },
         {
           "name": "string.quoted.bojan",
-          "match": "(?<=✅)[^\\(\\)\\[\\]]+"
+          "match": "(?<=✅)[^\\[\\]]+"
         },
         {
           "name": "variable.bojan",
-          "match": "(?<=⚠️)[^\\(\\)\\[\\]]+"
+          "match": "(?<=⚠️)[^\\[\\]]+"
         },
         {
           "name": "comment.line.bojan",
@@ -111,12 +108,6 @@
       "name": "comment.block.bojan",
       "begin": "\\[",
       "end": "\\]",
-      "patterns": []
-    },
-    "blockComments2": {
-      "name": "comment.block.bojan",
-      "begin": "\\(",
-      "end": "\\)",
       "patterns": []
     },
     "warning": {
