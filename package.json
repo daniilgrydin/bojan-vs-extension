@@ -23,8 +23,8 @@
           ".bojan"
         ],
         "icon": {
-          "light": "./icons/light-icon.png",
-          "dark": "./icons/dark-icon.png"
+          "light": "./images/light-icon.png",
+          "dark": "./images/dark-icon.png"
         },
         "configuration": "./language-configuration.json"
       }
