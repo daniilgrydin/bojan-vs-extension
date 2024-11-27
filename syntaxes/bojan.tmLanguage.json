@@ -12,6 +12,9 @@
       "include": "#paths"
     },
     {
+      "include": "#paths_linux"
+    },
+    {
       "include": "#links"
     },
     {
@@ -174,6 +177,10 @@
     "paths": {
       "name": "entity.name.function.bojan",
       "match": "(?i)\\b([a-z]:)?[\\/\\\\][^\\s\\n\\r\\t\\v\\f]+\\b"
+    },
+    "paths_linux": {
+      "name": "entity.name.function.bojan",
+      "match": "(?i)\\b([a-z]:)?[\\\\][^\\s\\n\\r\\t\\v\\f]+\\b"
     },
     "keywords": {
       "name": "keyword.bojan",
