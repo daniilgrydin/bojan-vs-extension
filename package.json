@@ -3,7 +3,7 @@
   "displayName": "Bojan",
   "description": "Simple Logging system",
   "version": "0.0.1",
-  "icon": "images/bojan.png",
+  "icon": "icons/bojan.png",
   "engines": {
     "vscode": "^1.95.0"
   },
