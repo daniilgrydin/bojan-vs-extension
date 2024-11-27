@@ -176,11 +176,7 @@
     },
     "paths": {
       "name": "entity.name.function.bojan",
-      "match": "(?i)\\b([a-z]:)?[\\/\\\\][^\\s\\n\\r\\t\\v\\f]+\\b"
-    },
-    "paths_linux": {
-      "name": "entity.name.function.bojan",
-      "match": "(?i)\\b([a-z]:)?[\\\\][^\\s\\n\\r\\t\\v\\f]+\\b"
+      "match": "(?i)(?:[a-zA-Z]:[\\\/]|\/|(?:[^\/\\s][^\\s\/]*[\\\/]))(?:[^\\s\/]+[\\\/])*(?:[^\\s\/]+\\.[^\\s\/]+|[^\\s\/]+)(?:[^\\s]*\b|$)"
     },
     "keywords": {
       "name": "keyword.bojan",
